@@ -67,10 +67,8 @@ class App extends React.Component {
 ## Agenda
 
 * Setup the workshop technologies
-* Intro HTML
 * Intro CSS
-* Intro JS
-* Intro ES6
+* Intro JS & ES6
 * Intro JSX
 * What is RN? 
 * Starting project 
