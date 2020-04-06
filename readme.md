@@ -66,7 +66,7 @@ class App extends React.Component {
 
 ## Agenda
 
-* Setup the workshop technologies
+* [Setup the workshop technologies](https://docs.google.com/presentation/d/1RXzmmdMY20VcSQexiJWzGWQRyPCI4zpUh4FaWBjbo_A/edit?usp=sharing)
 * Intro CSS
 * Intro JS & ES6
 * Intro JSX
