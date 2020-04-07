@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     backgroundColor: "yellow",
   },
   box1: {
-    // flex: 1,
+    flex: 1,
     width: 100,
     height: 100,
     backgroundColor: "red",
@@ -43,13 +43,13 @@ const styles = StyleSheet.create({
 
 const boxes = StyleSheet.create({
   box2: {
-    // flex: 3,
-    width: 100,
-    height: 100,
+    flex: 2,
+    // width: 100,
+    // height: 100,
     backgroundColor: "blue",
   },
 });
 
-const wrapper = StyleSheet.compose(styles.container, boxes.box2);
+const wrapper = StyleSheet.compose(boxes.box2, styles.container);
 
 export default FlexDemo;

@@ -13,7 +13,7 @@ const navigator = createStackNavigator(
     Play: PlaygroundScreen,
   },
   {
-    initialRouteName: "Home",
+    initialRouteName: "Play",
     defaultNavigationOptions: {
       title: "App",
     },

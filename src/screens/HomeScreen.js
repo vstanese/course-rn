@@ -9,12 +9,12 @@ const HomeScreen = () => (
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1,
+    flex: 1,
     backgroundColor: "pink",
   },
   title: {
-    // margin: 50,
-    // padding: 20,
+    marginVertical: 20,
+    padding: 20,
     borderWidth: 10,
     borderColor: "#000",
     borderRadius: 6,
