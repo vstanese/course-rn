@@ -68,7 +68,7 @@ class App extends React.Component {
 
 * [Setup the workshop technologies](https://docs.google.com/presentation/d/1RXzmmdMY20VcSQexiJWzGWQRyPCI4zpUh4FaWBjbo_A/edit?usp=sharing)
 * Intro CSS
-* Intro JS & ES6
+* [Intro JS & ES6](https://codepen.io/alinoltean/pen/mdedXEe?editors=1012)
 * Intro JSX
 * What is RN? 
 * Starting project 
