@@ -1,6 +1,6 @@
 ## Introduction
 
-[React Native](https://facebook.github.io/react-native/) makes it possible to make native 
+[React Native](https://facebook.github.io/react-native/) makes it possible to make native
 iOS and Android mobile apps without needing to know any iOS or Android programming - just JavaScript!
 
 In this training, we'll write a simple mobile app that you can run on your own phone and share with your friends!
@@ -14,22 +14,24 @@ In order to take advantage this training, you should have the following experien
 
 ## Tools
 
-For this training, you'll need 
-- A Macbook *OR* a Windows or Linux laptop. 
-- An iPhone *OR* an Android smartphone
+For this training, you'll need
 
-**Before the Training**, please make sure you have the following software installed *on your computer*:
+- A Macbook _OR_ a Windows or Linux laptop.
+- An iPhone _OR_ an Android smartphone
+
+**Before the Training**, please make sure you have the following software installed _on your computer_:
+
 - [Node.js](https://nodejs.org) 6.x or later
   - Make sure you know how to open your "Command Line" or "Terminal" and type `node -v`. You should see the your Node.js version printed in the terminal.
 - A text editor that can be used to edit JavaScript, for example [Atom](https://atom.io/), [VS Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/)
   - If you don't have a preference, I recommend Atom, but any text editor will do!
 
-You should also install the **Expo** app *on your phone*
+You should also install the **Expo** app _on your phone_
 ([iOS App Store](https://itunes.apple.com/app/apple-store/id982107779?mt=8) | [Android Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www))
 
 **Optionally**, you can install the following on your laptop:
-- Create React Native App (with `npm install -g create-react-native-app`)
 
+- Create React Native App (with `npm install -g create-react-native-app`)
 
 ## Optional reading
 
@@ -49,35 +51,30 @@ The following topics will help you on this training, but are not mandatory. The 
 Basically, if you can understand what each of the keywords and syntax in this example does, you'll be in great shape!
 
 ```es6
-import React from 'react'
+import React from "react";
 
 class App extends React.Component {
   render() {
-    const message = 'Hello world!';
-    return (
-      <Button onPress={() => console.log(message)}>
-        Press me!
-      </Button>
-    )
+    const message = "Hello world!";
+    return <Button onPress={() => console.log(message)}>Press me!</Button>;
   }
 }
 ```
 
-
 ## Agenda
 
-* [Setup the workshop technologies](https://docs.google.com/presentation/d/1RXzmmdMY20VcSQexiJWzGWQRyPCI4zpUh4FaWBjbo_A/edit?usp=sharing)
-* Intro CSS
-* [Intro JS & ES6](https://codepen.io/alinoltean/pen/mdedXEe?editors=1012)
-* Intro JSX
-* What is RN? 
-* Starting project 
-* React Components
-* Component API
-* Lifecycle API
-* Working with styles
-* Layout
-* Lists
-* Navigation 
-* Networking 
-* Build an application
+- [Setup the workshop technologies](https://docs.google.com/presentation/d/1RXzmmdMY20VcSQexiJWzGWQRyPCI4zpUh4FaWBjbo_A/edit?usp=sharing)
+- Intro CSS
+- [Intro JS & ES6](https://codepen.io/alinoltean/pen/mdedXEe?editors=1012)
+- [Intro JSX](https://docs.google.com/presentation/d/1E6o6EdNeZdNnRLRgLO_qRTX0v0QQ9ZwL0WvknKO7QZk/edit?usp=sharing)
+- What is RN?
+- Starting project
+- React Components
+- Component API
+- Lifecycle API
+- Working with styles
+- Layout
+- Lists
+- Navigation
+- Networking
+- Build an application
