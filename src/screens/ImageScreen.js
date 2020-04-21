@@ -1,10 +1,10 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
 
-const ComponentsScreen = () => {
+const ImageScreen = () => {
   return (
     <View>
-      <Text style={styles.title}>Components Screen Demo</Text>
+      <Text style={styles.title}>Image Screen</Text>
     </View>
   );
 };
@@ -15,4 +15,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ComponentsScreen;
+export default ImageScreen;
