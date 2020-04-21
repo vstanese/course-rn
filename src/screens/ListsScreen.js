@@ -7,6 +7,7 @@ const ListsScreen = (props) => {
   return (
     <View>
       <Text style={styles.title}>Lists Screen Demo</Text>
+      <CardView>Nume si Link Img</CardView>
     </View>
   );
 };
