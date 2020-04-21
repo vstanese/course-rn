@@ -11,4 +11,4 @@ const ImageDetail = () => {
 
 const styles = StyleSheet.create();
 
-export default ListsScreen;
+export default ImageDetail;
