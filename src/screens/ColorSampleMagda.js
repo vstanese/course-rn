@@ -1,22 +1,20 @@
 import React from "react";
 import { View, StyleSheet, Button, Text } from "react-native";
 
-const ColorSample = ({ title, onIncrement, onDecrement, msgHandler }) => {
+const ColorSampleMagda = ({ title, msgHandler, setColors }) => {
   return (
     <View>
       <Text>{title}</Text>
       <Button
         title={"Increment " + title}
         onPress={() => {
-          onIncrement();
-          msgHandler("Incremented " + title);
+          setColors({ color: title, incrementDecrement: "increment" });
         }}
       ></Button>
       <Button
         title={"Decrement " + title}
         onPress={() => {
-          onDecrement();
-          msgHandler("Decremented " + title);
+          setColors({ color: title, incrementDecrement: "decrement" });
         }}
       ></Button>
     </View>
@@ -24,4 +22,4 @@ const ColorSample = ({ title, onIncrement, onDecrement, msgHandler }) => {
 };
 
 const styles = StyleSheet.create({});
-export default ColorSample;
+export default ColorSampleMagda;

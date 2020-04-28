@@ -1,7 +1,12 @@
 import React from "react";
 import { View, StyleSheet, Button, Text } from "react-native";
 
-const ColorSample = ({ title, onIncrement, onDecrement, msgHandler }) => {
+const UseReducerColorSample = ({
+  title,
+  onIncrement,
+  onDecrement,
+  msgHandler,
+}) => {
   return (
     <View>
       <Text>{title}</Text>
@@ -24,4 +29,4 @@ const ColorSample = ({ title, onIncrement, onDecrement, msgHandler }) => {
 };
 
 const styles = StyleSheet.create({});
-export default ColorSample;
+export default UseReducerColorSample;

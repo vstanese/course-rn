@@ -1,29 +1,20 @@
 import React from "react";
-import { View, Text, StyleSheet, Button, TouchableOpacity } from "react-native";
-import UseStateScreen from './UseStateScreen';
+import { View, StyleSheet, Button } from "react-native";
 
 const HomeScreen = ({ navigation }) => {
-
   return (
-    <View style={{flex: 1}}>
-      <Button
-        onPress={() => navigation.navigate("CounterScreenWrong")}
-        title="Wrong counter screen"
-      />
-
-      <Button
-        onPress={() => navigation.navigate("UseStateScreen")}
-        title="Counter screen with state"
-      />
-
-      <Button
-        onPress={() => navigation.navigate("ColorScreen")}
-        title="Color screen"
-      />
-
+    <View style={{ flex: 1 }}>
       <Button
         onPress={() => navigation.navigate("CreateColor")}
         title="Color Game"
+      />
+      <Button
+        onPress={() => navigation.navigate("UseReducerCreateColor")}
+        title="Color Game Reducer"
+      />
+      <Button
+        onPress={() => navigation.navigate("CreateColorMagda")}
+        title="Modificare Magda"
       />
     </View>
   );
