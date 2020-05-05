@@ -1,33 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, ScrollView } from "react-native";
 import SearchBar from "../components/SearchBar";
-import v3 from "../api/v3";
+import useResults from "../hooks/useResults";
+import ResultsList from "../components/ResultsList";
 
-const SearchScreen = () => {
+const SearchScreen = ({ navigation }) => {
   const [term, setTerm] = useState("");
-  const [results, setResults] = useState([]);
-  const [errorMsg, setErrorMsg] = useState("");
+  const [results, searchApi, errorMsg] = useResults();
 
-  const searchApi = async (searchTerm) => {
-    try {
-      const response = await v3.get("/search", {
-        params: {
-          limit: 50,
-          term: searchTerm,
-          location: "NYC",
-        },
-      });
-      setResults(response.data.businesses);
-      setErrorMsg(null);
-    } catch (e) {
-      console.log(e);
-      setErrorMsg("Smth went wrong");
-    }
+  const filterResultsByPrice = (price) => {
+    // price === '$' || '$$' || '$$$'
+    return results.filter((result) => {
+      return result.price === price;
+    });
   };
-
-  useEffect(() => {
-    searchApi("pasta");
-  }, []);
 
   return (
     <View style={{ backgroundColor: "#fff", flex: 1 }}>
@@ -38,6 +24,21 @@ const SearchScreen = () => {
       />
       {errorMsg ? <Text>{errorMsg}</Text> : null}
       <Text>We have found {results.length} results</Text>
+      <ResultsList
+        navigation={navigation}
+        results={filterResultsByPrice("$")}
+        title="Cheap"
+      />
+      <ResultsList
+        navigation={navigation}
+        results={filterResultsByPrice("$$")}
+        title="Bit expensive"
+      />
+      <ResultsList
+        navigation={navigation}
+        results={filterResultsByPrice("$$$")}
+        title="Expensive"
+      />
     </View>
   );
 };
